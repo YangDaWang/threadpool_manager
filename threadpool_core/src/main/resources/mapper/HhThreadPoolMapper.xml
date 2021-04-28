@@ -14,11 +14,12 @@
         <result column="queue_size" property="queueSize" />
         <result column="updated_at" property="updatedAt" />
         <result column="created_at" property="createdAt" />
+        <result column="thread_prefix" property="threadPrefix" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, business_id, alarm_id, pool_name, core_pool_size, maximum_pool_size, queue_type, queue_size, updated_at, created_at
+        id, business_id, alarm_id, thread_prefix, pool_name, core_pool_size, maximum_pool_size, queue_type, queue_size, updated_at, created_at
     </sql>
 
 </mapper>

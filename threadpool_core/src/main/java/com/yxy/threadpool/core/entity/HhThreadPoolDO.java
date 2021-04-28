@@ -42,6 +42,11 @@ public class HhThreadPoolDO extends Model<HhThreadPoolDO> {
     private String poolName;
 
     /**
+     * 线程前缀
+     */
+    private String threadPrefix;
+
+    /**
      * 核心线程数
      */
     private Integer corePoolSize;

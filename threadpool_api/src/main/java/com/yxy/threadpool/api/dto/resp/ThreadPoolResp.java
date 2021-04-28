@@ -29,6 +29,8 @@ public class ThreadPoolResp {
      */
     private Integer maximumPoolSize;
 
+    private String threadPrefix;
+
     /**
      * 队列类型
      */
@@ -38,15 +40,5 @@ public class ThreadPoolResp {
      * 队列数量
      */
     private Integer queueSize;
-
-    /**
-     * 更新时间
-     */
-    private LocalDateTime updatedAt;
-
-    /**
-     * 创建时间
-     */
-    private LocalDateTime createdAt;
 
 }

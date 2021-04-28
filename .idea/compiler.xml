@@ -18,6 +18,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="threadpool_admin" options="-parameters" />
+      <module name="threadpool_api" options="-parameters" />
+      <module name="threadpool_client" options="-parameters" />
+      <module name="threadpool_core" options="-parameters" />
       <module name="threadpool_server" options="-parameters" />
     </option>
   </component>
