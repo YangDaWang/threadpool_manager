@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxy.threadpool.core.mapper.HhThreadPoolMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yxy.threadpool.core.entity.HhThreadPoolDO">
+        <id column="id" property="id" />
+        <result column="business_id" property="businessId" />
+        <result column="alarm_id" property="alarmId" />
+        <result column="pool_name" property="poolName" />
+        <result column="core_pool_size" property="corePoolSize" />
+        <result column="maximum_pool_size" property="maximumPoolSize" />
+        <result column="queue_type" property="queueType" />
+        <result column="queue_size" property="queueSize" />
+        <result column="updated_at" property="updatedAt" />
+        <result column="created_at" property="createdAt" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, business_id, alarm_id, pool_name, core_pool_size, maximum_pool_size, queue_type, queue_size, updated_at, created_at
+    </sql>
+
+</mapper>
