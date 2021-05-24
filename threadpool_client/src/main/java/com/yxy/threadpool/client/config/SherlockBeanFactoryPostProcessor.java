@@ -46,7 +46,7 @@ public class SherlockBeanFactoryPostProcessor implements BeanFactoryPostProcesso
     }
 
     private BlockingQueue getQueueByType(Integer queueType, Integer queueSize) {
-        //todo
+        //todo 根据参数去配置相应的任务队列
         return new LinkedBlockingDeque<>(queueSize);
     }
 }

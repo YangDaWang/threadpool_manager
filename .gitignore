@@ -1,5 +1,10 @@
-HELP.md
+threadpool_server/HELP.md
 target/
+/threadpool_admin/target
+/threadpool_client/target
+/threadpool_api/target
+/threadpool_server/target
+/threadpool_core/target
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
