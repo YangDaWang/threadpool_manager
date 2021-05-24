@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Data
-public class BaseResponse<T> {
+public class YxyBaseResponse<T> {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     protected Integer code;
@@ -23,15 +23,15 @@ public class BaseResponse<T> {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     protected Object extraParam;
 
-    public static <T> BaseResponse<T> withCodeMsg(Integer code, String message) {
-        return BaseResponse.<T>builder().code(code).message(message).build();
+    public static <T> YxyBaseResponse<T> withCodeMsg(Integer code, String message) {
+        return YxyBaseResponse.<T>builder().code(code).message(message).build();
     }
 
-    public static BaseResponse<Object> success() {
+    public static YxyBaseResponse<Object> success() {
         return builder().data(Collections.singletonMap("success", true)).build();
     }
 
-    public static BaseResponse<Object> failed() {
+    public static YxyBaseResponse<Object> failed() {
         return builder().data(Collections.singletonMap("success", false)).build();
     }
 }

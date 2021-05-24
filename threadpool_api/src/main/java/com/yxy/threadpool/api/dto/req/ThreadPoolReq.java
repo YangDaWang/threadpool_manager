@@ -14,6 +14,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ThreadPoolReq {
 
-    private Long businessId;
+    private String businessCode;
 
 }
